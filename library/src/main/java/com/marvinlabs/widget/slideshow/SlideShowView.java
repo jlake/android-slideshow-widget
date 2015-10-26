@@ -6,7 +6,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
 import android.graphics.Canvas;
-import android.graphics.drawable.StateListDrawable;
+//import android.graphics.drawable.StateListDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -64,7 +65,8 @@ public class SlideShowView extends RelativeLayout implements View.OnClickListene
     private OnSlideClickListener slideClickListener;
 
     // A selector to show when the view is clicked
-    private StateListDrawable onClickedDrawable;
+    //private StateListDrawable onClickedDrawable;
+    private Drawable onClickedDrawable;
 
     // Watch the adapter data
     private DataSetObserver adapterObserver = new DataSetObserver() {
